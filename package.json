@@ -1,0 +1,42 @@
+{
+  "name": "alfred-ultimate-google-translate",
+  "version": "0.0.0",
+  "description": "Alfred workflow for translate via google translate",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeppestaerk/alfred-ultimate-google-translate.git"
+  },
+  "author": "Jeppe Stærk <jeppe@staerk.io> (ugt.staerk.io)",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jeppestaerk/alfred-ultimate-google-translate/issues"
+  },
+  "homepage": "https://github.com/jeppestaerk/alfred-ultimate-google-translate#readme",
+  "main": "index.js"
+}
