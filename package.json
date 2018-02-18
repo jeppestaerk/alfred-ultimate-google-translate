@@ -1,6 +1,6 @@
 {
   "name": "alfred-ultimate-google-translate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Alfred workflow for translate via google translate",
   "license": "MIT",
   "repository": {
@@ -12,7 +12,6 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
@@ -27,16 +26,8 @@
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^0.6.0"
-  },
-  "devDependencies": {
-    "alfy-test": "^0.3.0",
-    "ava": "^0.18.0",
-    "xo": "^0.17.0"
-  },
-  "bugs": {
-    "url": "https://github.com/jeppestaerk/alfred-ultimate-google-translate/issues"
-  },
-  "homepage": "https://github.com/jeppestaerk/alfred-ultimate-google-translate#readme",
-  "main": "index.js"
+    "alfy": "^0.6.0",
+    "global-tunnel-ng": "^2.1.1",
+    "google-translate-api": "^2.3.0"
+  }
 }

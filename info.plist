@@ -2,19 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>ultimate-google-translate</string>
 	<key>bundleid</key>
-	<string>staerk.ugt.ultimate-google-translate</string>
+	<string>io.staerk.alfred.ultimate-google-translate</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>E929603C-890E-4776-8E83-392F1822889B</key>
+		<key>3CA57BB4-8B6D-4AA3-BD64-619F0672589A</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8914D407-2A26-4D58-B876-361EE2E4891D</string>
+				<string>E929603C-890E-4776-8E83-392F1822889B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -23,61 +21,139 @@
 				<false/>
 			</dict>
 		</array>
+		<key>60506219-82DE-48F4-BCEA-EEDD30EE1C87</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3CA57BB4-8B6D-4AA3-BD64-619F0672589A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>71222ACF-F803-4AF2-9836-3D6C9ABB45FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E929603C-890E-4776-8E83-392F1822889B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E929603C-890E-4776-8E83-392F1822889B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>55E5923A-E266-49FC-9FB8-3CECF8E2FB3F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CC2411F6-C86A-40A0-87FC-2474CD8A6A5F</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
 	</dict>
+	<key>createdby</key>
+	<string>Jeppe Stærk &lt;jeppe@staerk.io&gt; (ugt.staerk.io)</string>
+	<key>description</key>
+	<string>Translate</string>
 	<key>disabled</key>
 	<false/>
+	<key>name</key>
+	<string>ultimate-google-translate</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>gt</string>
+				<key>subtext</key>
+				<string>press enter</string>
+				<key>text</key>
+				<string>Translate to english</string>
+				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>8914D407-2A26-4D58-B876-361EE2E4891D</string>
+			<string>71222ACF-F803-4AF2-9836-3D6C9ABB45FE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>55E5923A-E266-49FC-9FB8-3CECF8E2FB3F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>gt</string>
+				<string>ugt</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
-				<true/>
+				<false/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>queuemode</key>
 				<integer>2</integer>
 				<key>runningsubtext</key>
-				<string>Searching...</string>
+				<string>{var:ugtSearch}</string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>index.js</string>
+				<string></string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Ultimate Google Translate</string>
+				<string>{var:ugtInfo}</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -90,25 +166,152 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>say {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CC2411F6-C86A-40A0-87FC-2474CD8A6A5F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>ugtDidYouMean</key>
+					<string>Mente du</string>
+					<key>ugtInfo</key>
+					<string>Indtast ord</string>
+					<key>ugtLangFrom</key>
+					<string>en</string>
+					<key>ugtLangTo</key>
+					<string>da</string>
+					<key>ugtNotFound</key>
+					<string>...ikke fundet</string>
+					<key>ugtPronounce</key>
+					<string>Udtal</string>
+					<key>ugtSearch</key>
+					<string>Søger...</string>
+					<key>ugtVoice</key>
+					<string>Sara</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3CA57BB4-8B6D-4AA3-BD64-619F0672589A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>gt</string>
+				<key>subtext</key>
+				<string>tryk enter</string>
+				<key>text</key>
+				<string>Oversæt til dansk</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>60506219-82DE-48F4-BCEA-EEDD30EE1C87</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>8914D407-2A26-4D58-B876-361EE2E4891D</key>
+		<key>3CA57BB4-8B6D-4AA3-BD64-619F0672589A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>230</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>240</integer>
+		</dict>
+		<key>55E5923A-E266-49FC-9FB8-3CECF8E2FB3F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>750</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>60506219-82DE-48F4-BCEA-EEDD30EE1C87</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
+		<key>71222ACF-F803-4AF2-9836-3D6C9ABB45FE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>CC2411F6-C86A-40A0-87FC-2474CD8A6A5F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>750</integer>
+			<key>ypos</key>
+			<integer>190</integer>
 		</dict>
 		<key>E929603C-890E-4776-8E83-392F1822889B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>340</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>120</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>ugtDidYouMean</key>
+		<string>Did you mean</string>
+		<key>ugtInfo</key>
+		<string>Type word</string>
+		<key>ugtLangFrom</key>
+		<string>da</string>
+		<key>ugtLangTo</key>
+		<string>en</string>
+		<key>ugtNotFound</key>
+		<string>...not found</string>
+		<key>ugtPronounce</key>
+		<string>Pronounce</string>
+		<key>ugtSearch</key>
+		<string>Searching...</string>
+		<key>ugtVoice</key>
+		<string>Samantha</string>
+	</dict>
+	<key>version</key>
+	<string></string>
+	<key>webaddress</key>
+	<string>https://github.com/jeppestaerk/alfred-ultimate-google-translate#readme</string>
 </dict>
 </plist>
