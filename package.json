@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "description": "Alfred workflow for translate via google translate",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeppestaerk/alfred-ultimate-google-translate.git"
+  "repository": "jeppestaerk/alfred-ultimate-google-translate",
+  "author": {
+    "name": "Jeppe Stærk",
+    "email": "hello@staerk.io",
+    "url": "https://github.com/jeppestaerk/alfred-ultimate-google-translate"
   },
-  "author": "Jeppe Stærk <jeppe@staerk.io> (ugt.staerk.io)",
   "engines": {
     "node": ">=4"
   },
@@ -23,7 +24,9 @@
   "keywords": [
     "alfred",
     "workflow",
-    "alfy"
+    "alfy",
+    "translate",
+    "google-translate"
   ],
   "dependencies": {
     "alfy": "^0.6.0",

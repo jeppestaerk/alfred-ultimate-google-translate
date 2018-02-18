@@ -19,4 +19,4 @@ In Alfred, type `gt`, <kbd>Enter</kbd>, and your query.
 
 ## License
 
-MIT © [Jeppe Stærk](http://ugt.staerk.io)
+MIT © [Jeppe Stærk](https://staerk.io)
