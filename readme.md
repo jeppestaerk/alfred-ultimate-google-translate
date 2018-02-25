@@ -1,6 +1,8 @@
-# alfred-ultimate-google-translate [![Build Status](https://travis-ci.org/jeppestaerk/alfred-ultimate-google-translate.svg?branch=master)](https://travis-ci.org/jeppestaerk/alfred-ultimate-google-translate)
+# alfred-ultimate-google-translate 
 
-> Alfred workflow for translate via google translate
+> Alfred 3 Workflow - Translate via google translate
+
+[![Build Status](https://travis-ci.org/jeppestaerk/alfred-ultimate-google-translate.svg?branch=master)](https://travis-ci.org/jeppestaerk/alfred-ultimate-google-translate)
 
 
 ## Install
@@ -14,7 +16,7 @@ $ npm install --global alfred-ultimate-google-translate
 
 ## Usage
 
-In Alfred, type `gt`, <kbd>Enter</kbd>, and your query.
+In Alfred, type `gt`, <kbd>⏎</kbd>, and your query.
 
 
 ## License

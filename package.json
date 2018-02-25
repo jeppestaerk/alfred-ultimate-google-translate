@@ -1,7 +1,7 @@
 {
   "name": "alfred-ultimate-google-translate",
-  "version": "0.0.1",
-  "description": "Alfred workflow for translate via google translate",
+  "version": "0.1.0",
+  "description": "Alfred 3 Workflow - Translate via google translate",
   "license": "MIT",
   "repository": "jeppestaerk/alfred-ultimate-google-translate",
   "author": {
@@ -30,7 +30,6 @@
   ],
   "dependencies": {
     "alfy": "^0.6.0",
-    "global-tunnel-ng": "^2.1.1",
     "google-translate-api": "^2.3.0"
   }
 }

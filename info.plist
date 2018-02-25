@@ -8,11 +8,11 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>3CA57BB4-8B6D-4AA3-BD64-619F0672589A</key>
+		<key>48B12441-99F9-40E6-8A98-C2B083467EBE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E929603C-890E-4776-8E83-392F1822889B</string>
+				<string>54848AE2-D259-4777-9523-BEDEDCBB0E14</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -21,11 +21,21 @@
 				<false/>
 			</dict>
 		</array>
-		<key>60506219-82DE-48F4-BCEA-EEDD30EE1C87</key>
+		<key>55E5923A-E266-49FC-9FB8-3CECF8E2FB3F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3CA57BB4-8B6D-4AA3-BD64-619F0672589A</string>
+				<string>6F993EF4-2C47-42DA-B537-9423395F1E5F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>EEB32C94-6F4E-4920-AAB6-5293174FB509</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,11 +44,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>71222ACF-F803-4AF2-9836-3D6C9ABB45FE</key>
+		<key>B349A96B-FBDF-4644-A255-5829520BA9AC</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E929603C-890E-4776-8E83-392F1822889B</string>
+				<string>55E5923A-E266-49FC-9FB8-3CECF8E2FB3F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B8D71A3C-C2A4-4C4A-922D-364D6088AD7D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CC2411F6-C86A-40A0-87FC-2474CD8A6A5F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -51,7 +74,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>55E5923A-E266-49FC-9FB8-3CECF8E2FB3F</string>
+				<string>B349A96B-FBDF-4644-A255-5829520BA9AC</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -61,7 +84,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>CC2411F6-C86A-40A0-87FC-2474CD8A6A5F</string>
+				<string>B8D71A3C-C2A4-4C4A-922D-364D6088AD7D</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
@@ -69,36 +92,46 @@
 				<key>vitoclose</key>
 				<true/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>48B12441-99F9-40E6-8A98-C2B083467EBE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Jeppe Stærk &lt;jeppe@staerk.io&gt; (ugt.staerk.io)</string>
+	<string>Jeppe Stærk</string>
 	<key>description</key>
-	<string>Translate in alfred via google translate</string>
+	<string>Translate via google translate api</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>ultimate-google-translate</string>
+	<string>Google Translate</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>gt</string>
-				<key>subtext</key>
-				<string>press enter</string>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
 				<key>text</key>
-				<string>Translate to english</string>
-				<key>withspace</key>
-				<true/>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Word copied to clipboard!</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>71222ACF-F803-4AF2-9836-3D6C9ABB45FE</string>
+			<string>6F993EF4-2C47-42DA-B537-9423395F1E5F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -122,79 +155,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>ugt</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>2</integer>
-				<key>queuemode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string>{var:ugtSearch}</string>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>{var:ugtInfo}</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
 				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>copy</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>E929603C-890E-4776-8E83-392F1822889B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>variables</key>
-				<dict>
-					<key>ugtDidYouMean</key>
-					<string>Mente du</string>
-					<key>ugtInfo</key>
-					<string>Indtast ord</string>
-					<key>ugtLangFrom</key>
-					<string>en</string>
-					<key>ugtLangTo</key>
-					<string>da</string>
-					<key>ugtNotFound</key>
-					<string>...ikke fundet</string>
-					<key>ugtPronounce</key>
-					<string>Udtal</string>
-					<key>ugtSearch</key>
-					<string>Søger...</string>
-					<key>ugtVoice</key>
-					<string>Sara</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>3CA57BB4-8B6D-4AA3-BD64-619F0672589A</string>
+			<string>B349A96B-FBDF-4644-A255-5829520BA9AC</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -224,21 +197,123 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>gt</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>2</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Translating...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
-				<string>tryk enter</string>
-				<key>text</key>
-				<string>Oversæt til dansk</string>
+				<string></string>
+				<key>title</key>
+				<string>Google Translate</string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>60506219-82DE-48F4-BCEA-EEDD30EE1C87</string>
+			<string>E929603C-890E-4776-8E83-392F1822889B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Hero</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>EEB32C94-6F4E-4920-AAB6-5293174FB509</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>pronounce</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>B8D71A3C-C2A4-4C4A-922D-364D6088AD7D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>tell application "Alfred 3" to search "gt {query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>54848AE2-D259-4777-9523-BEDEDCBB0E14</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>rerun</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>48B12441-99F9-40E6-8A98-C2B083467EBE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -247,66 +322,73 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>3CA57BB4-8B6D-4AA3-BD64-619F0672589A</key>
+		<key>48B12441-99F9-40E6-8A98-C2B083467EBE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>230</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>290</integer>
+		</dict>
+		<key>54848AE2-D259-4777-9523-BEDEDCBB0E14</key>
+		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
+			<key>ypos</key>
+			<integer>260</integer>
 		</dict>
 		<key>55E5923A-E266-49FC-9FB8-3CECF8E2FB3F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>750</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>20</integer>
 		</dict>
-		<key>60506219-82DE-48F4-BCEA-EEDD30EE1C87</key>
+		<key>6F993EF4-2C47-42DA-B537-9423395F1E5F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>490</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>20</integer>
 		</dict>
-		<key>71222ACF-F803-4AF2-9836-3D6C9ABB45FE</key>
+		<key>B349A96B-FBDF-4644-A255-5829520BA9AC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>230</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>50</integer>
+		</dict>
+		<key>B8D71A3C-C2A4-4C4A-922D-364D6088AD7D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>230</integer>
+			<key>ypos</key>
+			<integer>170</integer>
 		</dict>
 		<key>CC2411F6-C86A-40A0-87FC-2474CD8A6A5F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>750</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>140</integer>
 		</dict>
 		<key>E929603C-890E-4776-8E83-392F1822889B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>120</integer>
+			<integer>140</integer>
+		</dict>
+		<key>EEB32C94-6F4E-4920-AAB6-5293174FB509</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>140</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>ugtDidYouMean</key>
-		<string>Did you mean</string>
-		<key>ugtInfo</key>
-		<string>Type word</string>
-		<key>ugtLangFrom</key>
-		<string>da</string>
-		<key>ugtLangTo</key>
-		<string>en</string>
-		<key>ugtNotFound</key>
-		<string>...not found</string>
-		<key>ugtPronounce</key>
-		<string>Pronounce</string>
-		<key>ugtSearch</key>
-		<string>Searching...</string>
-		<key>ugtVoice</key>
+		<key>voice</key>
 		<string>Samantha</string>
 	</dict>
 	<key>version</key>
